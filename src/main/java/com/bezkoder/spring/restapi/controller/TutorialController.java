@@ -30,6 +30,7 @@ public class TutorialController {
   @GetMapping("/tutorials")
   public ResponseEntity<List<Tutorial>> getAllTutorials(@RequestParam(required = false) String title) {
     try {
+      System.out.println("tuto");
       List<Tutorial> tutorials = new ArrayList<Tutorial>();
 
       if (title == null)
