@@ -31,6 +31,7 @@ public class TutorialController {
   public ResponseEntity<List<Tutorial>> getAllTutorials(@RequestParam(required = false) String title) {
     try {
       System.out.println("tuto");
+      System.out.println("second update");
       List<Tutorial> tutorials = new ArrayList<Tutorial>();
 
       if (title == null)
